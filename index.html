@@ -93,7 +93,7 @@
         </svg>
     </g>
 
-    <!-- Modal -->
+    <!-- Modal-Reviews -->
 
     <div class="reviews__modal">
         
@@ -101,6 +101,39 @@
             <svg class="close__modal__reviews">
                 <use xlink:href="#close__modal"></use>
             </svg>
+        </div>
+    </div>
+
+    <!-- Modal-Feedback -->
+
+    <div class="feedback__modal">
+        <div class="feedback__modal__inner">
+            <svg class="close__modal__feedback">
+                <use xlink:href="#close__modal"></use>
+            </svg>
+            <h2 class="feedback__modal__title">Оставьте заявку</h2>
+            <form action="" class="feedback__modal__form">
+                <div class="feedback__modal__input__block">
+                    <input type="name" class="input feedback__modal__input feedback__modal__form__name" placeholder="Имя" required>
+                    <span class="input__descr feedback__modal__form__check">Имя</span>
+                    <span class="error feedback__modal__form__error">Пожалуйста, введите имя</span>
+                </div>
+                <div class="feedback__modal__input__block">
+                    <label class='wrap__four'>
+                        <input type="phone" class="input feedback__modal__input feedback__modal__form__phone"placeholder="Телефон" required>
+                        <span class='tel__four'>+375</span>
+                     </label>
+                     <span class="input__descr feedback__modal__form__check">Телефон</span>
+                     <span class="error feedback__modal__form__error">Пожалуйста, введите телефон</span>
+                     <span class="error__two feedback__modal__form__error__two">Телефон введен неправильно</span>
+
+                </div>
+                <div class="feedback__submit__block">
+                    <input type="submit" class="feedback__modal__btn" value="Отправить заявку">
+                    <p class="feedback__submit__text">Нажимая на кнопку, я соглашаюсь 
+                        на обработку моих персональных данных</p>
+                </div>
+            </form>
         </div>
     </div>
 
@@ -288,32 +321,32 @@
     <div class="animation">
         
         <div class="animation__item__left">
-            <div class="animation__item">
+            <a href="#" class="animation__item">
                 <div class="animation__gif" loading="lazy">
                     <img src="img/animation/gif-1.gif" alt="" class="gif gif__one">
                 </div>
                 <p class="animation__text">Корпоративные сайты</p>
-            </div>
-            <div class="animation__item">
+            </a>
+            <a href="#" class="animation__item">
                 <div class="animation__gif" loading="lazy">
                     <img src="img/animation/gif-2.gif" alt="" class=" gif gif__two">
                 </div>
                 <p class="animation__text">Интернет-магазины</p>
-            </div>
+            </a>
         </div>
         <div class="animation__item__right">
-            <div class="animation__item">
-                <div class="animation__gif" loading="lazy">
-                    <img src="img/animation/gif-3.gif" alt="" class=" gif gif__three">
-                </div>
-                <p class="animation__text">Промо-сайты и лендинги</p>
-            </div>
-            <div class="animation__item">
+            <a href="#" class="animation__item">
+                    <div class="animation__gif" loading="lazy">
+                        <img src="img/animation/gif-3.gif" alt="" class=" gif gif__three">
+                    </div>
+                    <p class="animation__text">Промо-сайты и лендинги</p>
+            </a>
+            <a href="#" class="animation__item">
                 <div class="animation__gif" loading="lazy">
                     <img src="img/animation/gif-4.gif" alt="" class=" gif gif__four">
                 </div>
                 <p class="animation__text">Сайты-порталы</p>
-            </div>
+            </a>
         </div>
 
     </div> <!-- /animation-->
@@ -330,11 +363,22 @@
 
                 <div class="feedback__form">
                     <form action="" class="form">
-                        <input type="name" class="input input__name" placeholder="Имя" required>
-                        <label class='wrap'>
-                            <input type="phone" class="input input__phone"placeholder="Телефон" required>
-                            <span class='tel'>+375</span>
-                         </label>
+                        <div>
+                            <input type="name" class="input feedback__input input__name" placeholder="Имя" required>
+                            <span class="input__descr input__name__prompt"> Имя</span>
+                            <span class="error feedback__form__error">Пожалуйста, введите имя</span>
+                        </div>
+                        <div>
+                            <label class='wrap__one'>
+                                <input type="phone" class="input feedback__input input__phone"placeholder="Телефон" required>
+                                <span class='tel__one'>+375</span>
+                            </label>
+                            <span class="input__descr input__name__prompt"> Телефон</span>
+                            <span class="error feedback__form__error">Пожалуйста, введите телефон</span>
+                            <span class="error__two feedback__form__error__two">Телефон введен неправильно</span>
+
+                        </div>
+
                         
                         <input type="submit" class="input__submit" value="Отправить заявку">
                     </form>
@@ -694,13 +738,17 @@
                             <div class="contacts__input__name__block">
                                 <label for="name">Имя</label>
                                 <input type="name" name="name" class="contacts__input__name" placeholder="Введите имя">
+                                <span class="error contacts__input__name__check">sss</span>
                             </div>
                             <div class="contacts__input__phone__block">
                                 <label for="phone">Номер телефона</label>
-                                <label class='wrap'>
+                                <label class='wrap__two'>
                                     <input type="phone" name="phone" class="contacts__input__phone" placeholder="Введите телефон">
-                                    <span class='tel'>+375</span>
+                                    <span class='tel__two'>+375</span>
                                  </label>
+                                <span class="error contacts__input__name__check">dsdsds</span>
+                                <span class="error__two contacts__input__phone__check__two">Телефон введен неправильно</span>
+
                             </div>
                             <input type="submit" class="contacts__input__submit">
                         </form>
@@ -984,12 +1032,19 @@
 
                 <div class="advantages__block__form">
                     <form action="" class="advantages__form">
-                        <input type="name" class="advantages__name__phone" placeholder="Имя">
-                        <label class='wrap'>
-                            <input type="phone" class="advantages__name__phone advantages__phone" placeholder="Телефон">
-                            <span class='tel'>+375</span>
-                         </label>
-                        <input type="submit" class="advantages__submit" value="Отправить заявку">
+                        <div>
+                            <input type="name" class="advantages__name__phone advantages__name" placeholder="Имя">
+                            <span class="error advantages__name__check">Пожалуйста, введите имя</span>
+                        </div>
+                        <div>
+                            <label class='wrap__three'>
+                                <input type="phone" class="advantages__name__phone advantages__phone" placeholder="Телефон">
+                                <span class='tel__three'>+375</span>
+                            </label>
+                            <span class="error advantages__name__check">Пожалуйста, введите телефон</span>
+                            <span class="error__two advantages__phone__check__two">Телефон введен неправильно</span>
+                        </div> 
+                        <input type="submit" class="advantages__submit" value="Отправить заявку">    
                     </form>
                 </div>
                 
@@ -1087,6 +1142,7 @@
     </div> <!-- /reviews -->
 
     <!-- Feedback -->
+
     <div class="feedback">
         <div class="container">
             <div class="feedback__inner">
@@ -1097,11 +1153,23 @@
 
                 <div class="feedback__form">
                     <form action="" class="form">
-                        <input type="name" class="input input__name" placeholder="Имя">
-                        <label class='wrap'>
-                            <input type="phone" class="input input__phone"placeholder="Телефон" required>
-                            <span class='tel'>+375</span>
-                         </label>
+                        <div>
+                            <input type="name" class="input feedback__input input__name" placeholder="Имя" required>
+                            <span class="input__descr input__name__prompt"> Имя</span>
+                            <span class="error feedback__form__error">Пожалуйста, введите имя</span>
+                        </div>
+                        <div>
+                            <label class='wrap__one'>
+                                <input type="phone" class="input feedback__input input__phone"placeholder="Телефон" required>
+                                <span class='tel__one'>+375</span>
+                            </label>
+                            <span class="input__descr input__name__prompt"> Телефон</span>
+                            <span class="error feedback__form__error">Пожалуйста, введите телефон</span>
+                            <span class="error__two feedback__form__error__two">Телефон введен неправильно</span>
+
+                        </div>
+
+                        
                         <input type="submit" class="input__submit" value="Отправить заявку">
                     </form>
                 </div>

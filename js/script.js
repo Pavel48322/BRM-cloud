@@ -150,7 +150,6 @@ document.addEventListener('DOMContentLoaded', () => {
         let current = 1;
         setInterval(() => {
             current++;
-            console.log(current);
             if ( current === 9) {
                 current = 1;
             }
@@ -159,7 +158,6 @@ document.addEventListener('DOMContentLoaded', () => {
         let currentTwo = 0;
         setInterval(() => {
             currentTwo++;
-            console.log(currentTwo);
             if ( currentTwo === 8) {
                 currentTwo = 0;
             }
@@ -234,13 +232,59 @@ document.addEventListener('DOMContentLoaded', () => {
              }
              element = element.offsetParent;
             }
-            return {x: xPos, y: yPos};
+            return {x: xPos + 10, y: yPos};
         }
     }
 
     photo();
 
-    
+    //Клик на инпут
+
+    function clickInput() {
+        
+        document.onclick=(e)=>{
+
+            if(e.target.classList.contains('input')){
+                closeDescr();
+              e.target.closest('div').querySelector('.input__descr').style.display="block";
+            }
+            else{
+                closeDescr();
+            }
+        };
+
+        function closeDescr(){
+            document.querySelectorAll('.input__descr').forEach(el=>{
+                if(el.style.display=='block' && el.closest('div').querySelector('input').value=="")el.style.display='none';
+            });
+        }
+
+    }
+    clickInput();
+
+
+    //modal 
+    function modal() {
+
+        const feedbackModal = document.querySelector('.feedback__modal'),
+              closeModalFeedback = document.querySelector('.close__modal__feedback');
+
+        feedbackModal.addEventListener('click', (e) => {
+            console.log(e.target);
+            if (e.target === feedbackModal || e.target === closeModalFeedback ) {
+                feedbackModal.style.display = 'none';
+                document.body.style.overflow = '';  // возвращаем, чтобы можно было скроллить страницу
+
+            }
+        
+        });
+        
+
+
+
+    }
+
+    modal();
 
 });
 
