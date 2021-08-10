@@ -1022,9 +1022,36 @@ input:focus:-ms-input-placeholder      {opacity:0;}/* IE */
     border-radius: 100%;
 }
 
+
+
 .gif__photo.active {
     transition: 1s;
     opacity: 1;
+}
+
+.gif__photo__one {
+    z-index: 10;
+}
+.gif__photo__two {
+    z-index: 11;
+}
+.gif__photo__three {
+    z-index: 12;
+}
+.gif__photo__four {
+    z-index: 13;
+}
+.gif__photo__five {
+    z-index: 14;
+}
+.gif__photo__six {
+    z-index: 15;
+}
+.gif__photo__seven {
+    z-index: 16;
+}
+.gif__photo__eight {
+    z-index: 17;
 }
 
 
@@ -1060,15 +1087,8 @@ input:focus:-ms-input-placeholder      {opacity:0;}/* IE */
     color: #FA5C45;
 }
 
-/* @keyframes spinerOne {
-    0% {
-        transform: translate(-2780px);
-    }
-    100% {
-        transform: translate(0px);
-    }
-    
-} */
+
+
 
 @keyframes spinerOne {
     0% {

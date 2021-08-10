@@ -137,6 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
       
     reviews();
+    
 
 
     //Всплывающие фотки 
@@ -146,26 +147,75 @@ document.addEventListener('DOMContentLoaded', () => {
         const gifPortfolio = document.querySelector('.gif__portfolio__inner');
 
         gifPortfolio.addEventListener("mouseout", getClickPosition, false);
+        let current = 1;
+        setInterval(() => {
+            current++;
+            console.log(current);
+            if ( current === 9) {
+                current = 1;
+            }
+        }, 200);
 
+        let currentTwo = 0;
+        setInterval(() => {
+            currentTwo++;
+            console.log(currentTwo);
+            if ( currentTwo === 8) {
+                currentTwo = 0;
+            }
+        }, 200);
         function getClickPosition (e) { //слушатель события движения мыши
 
-            let picture = document.querySelectorAll(".gif__photo");
+            const pictureOne = document.querySelector(".gif__photo__one"),
+                  pictureTwo = document.querySelector(".gif__photo__two"),
+                  pictureThree = document.querySelector(".gif__photo__three"),
+                  pictureFour = document.querySelector(".gif__photo__four"),
+                  pictureFive = document.querySelector(".gif__photo__five"),
+                  pictureSix = document.querySelector(".gif__photo__six"),
+                  pictureSeven = document.querySelector(".gif__photo__seven"),
+                  pictureEight = document.querySelector(".gif__photo__eight");
             let parentPosition = getPosition(e.currentTarget);
+            
+            pictureOne.style.zIndex = 1;
+            pictureTwo.style.zIndex = 2;
+            pictureThree.style.zIndex = 3;
+            pictureFour.style.zIndex = 4;
+            pictureFive.style.zIndex = 5;
+            pictureSix.style.zIndex = 6;
+            pictureSeven.style.zIndex = 7;
+            pictureEight.style.zIndex = 8;
 
-            picture.forEach(item => {
-                let xPosition = e.clientX - parentPosition.x - (item.clientWidth / 2);
-                let yPosition = e.clientY - parentPosition.y - (item.clientHeight / 2);
-                item.style.left = xPosition + "px";
-                item.style.top = yPosition + "px";
-                item.style.transition = '1s';
-                item.style.opacity = '1';
-                item.classList.add('active');
-                item.style.borderRadius = '0';
-                setTimeout(() => {
-                    item.style.opacity = '0';
-                    item.style.borderRadius = '10%';
-                }, 2000);
-            });
+            function check (variable) {
+                let xPosition = e.clientX - parentPosition.x - (variable.clientWidth / 2);
+                let yPosition = e.clientY - parentPosition.y - (variable.clientHeight / 2);
+                if (current == variable.style.zIndex || currentTwo == variable.style.zIndex) {
+                    variable.style.left = xPosition + "px";
+                    variable.style.top = yPosition + "px";
+                    variable.style.transition = '.4s linear';
+                    variable.style.opacity = '1';
+                    variable.style.transform = 'scale(1)';
+                    variable.style.borderRadius = '0';
+                    variable.classList.add('active');
+                    variable.style.borderRadius = '0';
+                    variable.style.marginLeft = '-100px';
+                } else {
+                    setTimeout(() => {
+                        variable.style.opacity = '0';
+                        variable.style.transform = 'scale(0)';
+                        variable.style.borderRadius = '100%';
+                        variable.style.marginLeft = '0px';
+                    }, 0);
+                }
+            }
+
+            check(pictureOne);
+            check(pictureTwo);
+            check(pictureThree);
+            check(pictureFour);
+            check(pictureFive);
+            check(pictureSix);
+            check(pictureSeven);
+            check(pictureEight);
         }
            
         function getPosition(element) { //расчёт позиции элемента
@@ -184,7 +234,7 @@ document.addEventListener('DOMContentLoaded', () => {
              }
              element = element.offsetParent;
             }
-            return { x: xPos, y: yPos };
+            return {x: xPos, y: yPos};
         }
     }
 
