@@ -100,16 +100,10 @@ document.addEventListener('DOMContentLoaded', () => {
     //Reviews
 
     function reviews() {
-        const reviewsText = document.querySelectorAll('.reviews__text'),
-              reviewsBtn = document.querySelectorAll('.reviews__btn'),
+        const reviewsBtn = document.querySelectorAll('.reviews__btn'),
               reviewsModal = document.querySelector('.reviews__modal'),
               closeModalReviews = document.querySelector('.close__modal__reviews'),
               closeModal = document.querySelector('use');
-
-        //чтобы после 7 строк кода появился скролл
-        reviewsText.forEach(item => {
-          item.style.height = item.offsetHeight + 'px';
-        });
       
         //открытие модал окна
         reviewsBtn.forEach(item => {
@@ -267,14 +261,23 @@ document.addEventListener('DOMContentLoaded', () => {
     function modal() {
 
         const feedbackModal = document.querySelector('.feedback__modal'),
-              closeModalFeedback = document.querySelector('.close__modal__feedback');
+              closeModalFeedback = document.querySelector('.close__modal__feedback'),
+              closeModalFeedbackUse = document.getElementById('close__modal__feedback__use__id'),
+              btnModalOpen = document.querySelectorAll('.btn__modal');
+
+        btnModalOpen.forEach(item => {
+            item.addEventListener('click', () => {
+                feedbackModal.style.display = 'block';
+                document.body.style.overflow = 'hidden';// чтобы оснoвное окно нельзя было прокрутить
+
+            });
+        });
 
         feedbackModal.addEventListener('click', (e) => {
-            console.log(e.target);
-            if (e.target === feedbackModal || e.target === closeModalFeedback ) {
+            if (e.target === feedbackModal || e.target === closeModalFeedback || e.target === closeModalFeedbackUse) {
                 feedbackModal.style.display = 'none';
                 document.body.style.overflow = '';  // возвращаем, чтобы можно было скроллить страницу
-
+                
             }
         
         });
