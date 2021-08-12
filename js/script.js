@@ -230,7 +230,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    photo();
+    if (document.documentElement.clientWidth >= 768 ) {
+        photo();
+    }
 
     //Клик на инпут
 
@@ -266,7 +268,8 @@ document.addEventListener('DOMContentLoaded', () => {
               btnModalOpen = document.querySelectorAll('.btn__modal');
 
         btnModalOpen.forEach(item => {
-            item.addEventListener('click', () => {
+            item.addEventListener('click', (e) => {
+                e.preventDefault();
                 feedbackModal.style.display = 'block';
                 document.body.style.overflow = 'hidden';// чтобы оснoвное окно нельзя было прокрутить
 

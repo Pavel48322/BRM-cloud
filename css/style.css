@@ -1,4 +1,4 @@
-@import url("fonts/Century Gothic/stylesheet.css");
+@import url("/fonts/Century\ Gothic/stylesheet.css");
 @font-face {
 	font-family: 'Futura PT Bold';
 	src: url('../fonts/futura_pt_bold.eot'); /* IE 9 Compatibility Mode */
@@ -369,7 +369,7 @@ li {
 }
 .menu__table>li>a::before{
     content: '';
-    background-image: url(/img/menu/close.svg);
+    background-image: url(/img/index/menu/close.svg);
     position: absolute;
     left: -30px;
     top: 10px;
@@ -1227,8 +1227,11 @@ input:focus:-ms-input-placeholder      {opacity:0;}/* IE */
 
 
 .gif__portfolio__inner {
-    overflow: hidden;
     position: relative;
+}
+
+.gif__portfolio__wrapper {
+    overflow: hidden;
 }
 
 .gif__photo {
@@ -2388,13 +2391,13 @@ label {
     color: #131313;
     max-width: 480px;
     width: 100%;
-    padding-bottom: 10px;
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 7;
     -webkit-box-orient: vertical;
     box-sizing: border-box;
     height: 260px;
+    padding-right: 15px;
   }
   
   .reviews__text:hover {
@@ -2403,6 +2406,7 @@ label {
   }
 
 .reviews__btn {
+    margin-top: 10px;
     cursor: pointer;
     width: 149px;
     height: 36px;
@@ -2416,6 +2420,21 @@ label {
     background: #fff;
     border: 0;
     border-bottom: 2px dashed #B0B0B0;
+}
+
+.reviews__item__description::-webkit-scrollbar {
+    width: 1px; /* ширина для вертикального скролла */
+    /* height: 5px; */
+    background-color: #000 ;
+
+}
+
+.reviews__item__description::-webkit-scrollbar-thumb {
+    width: 10px; /* ширина для вертикального скролла */
+    /* height: 4px; */
+    border: 100%;
+    background-color: #FA5C45 ;
+
 }
 
 .reviews__btn:hover {
@@ -4035,6 +4054,14 @@ label {
         height: 150px;
     }
 
+    .reviews__text {
+        padding-right: 15px;
+    }
+
+    .reviews__item__description {
+        padding-right: 0px;
+    }
+
     /* Footer
     ===================== */
 
@@ -4342,6 +4369,7 @@ label {
     .contacts__content__social {
         margin-top: 0;
         margin-bottom: 80px;
+        padding-top: 0;
     }
 
     .contacts__content__img {
@@ -4490,6 +4518,25 @@ label {
 
     }
 
+    .menu__table>li>a::before{
+        content: initial;
+        background-image: initial;
+        position: absolute;
+        left: -30px;
+        top: 10px;
+        animation-name: spinerFive;
+        animation-duration: 2s;
+        animation-iteration-count:infinite;
+        animation-timing-function: linear;
+        width: 27px;
+        height: 27px;
+        padding: 0;
+        margin: 0;
+        opacity: 0;
+    }
+
+    
+
     .menu__table>li>ul>li {
         font-size: 16px;
         padding-bottom: 15px;
@@ -4498,6 +4545,16 @@ label {
     .menu__table>li>ul>li:nth-child(1) {
         padding-top: 20px;
     }
+
+    .menu__table>li.active {
+        padding-left: 0px;
+        transition: 0.5s;
+    }
+
+    .menu__table a:hover {
+        color: #FA5C45;
+    }
+
 
 
     /* Header 
@@ -4849,6 +4906,16 @@ label {
         font-size: 14px;
     }
 
+    .business__content:hover .business__title{
+        color: initial;
+        border-bottom: initial;
+    }
+
+    .business__content:not(.bussiness__content__block):hover .business__title, .business__content:not(.bussiness__content__block):hover .business__text {
+        margin-left: initial;
+        transform: initial;
+    }
+
     .business__logo {
         max-width: 349px;
         min-width: auto;
@@ -5127,10 +5194,27 @@ label {
 
     .advantages__name__phone {
         max-width: 210px;
-        margin-right: 30px;
         font-size: 21px;
         line-height: 31px;
         margin-bottom: 0px;
+    }
+
+    .advantages__form__block__name {
+        margin-right: 45px;
+    }
+
+    .advantages__name {
+        padding-right: 15px;
+    }
+
+    .advantages__phone {
+        max-width: 235px;
+        width: 100%;
+        padding-right: 60px;
+    }
+
+    .advantages__form__block__phone {
+        margin-right: 30px;
     }
 
     .advantages__form {
@@ -5166,7 +5250,7 @@ label {
         font-size: 21px!important;
 
         position: absolute;
-        top: -1px;
+        top: -42px;
         left: 0;
         height: 59px;
         opacity: 0;
@@ -5574,7 +5658,7 @@ label {
         font-size: 21px!important;
 
         position: absolute;
-        top: -2px;
+        top: -41px;
         left: 0;
         height: 59px;
         opacity: 0;
@@ -5583,7 +5667,25 @@ label {
     }
 
     .advantages__name__phone {
-        margin-top: 0;
+        margin-top: initial;
+    }
+
+    .advantages__form__block__name {
+        margin-right: initial;
+    }
+
+    .advantages__name {
+        padding-right: initial;
+    }
+
+    .advantages__phone {
+        max-width: initial;
+        width: 100%;
+        padding-right: initial;
+    }
+
+    .advantages__form__block__phone {
+        margin-right: initial;
     }
 
 }
