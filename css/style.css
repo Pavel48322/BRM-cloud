@@ -1258,9 +1258,15 @@ input:focus:-ms-input-placeholder      {opacity:0;}/* IE */
     animation-iteration-count:infinite;
     animation-timing-function: linear;
     z-index: 999;
+}
 
-
-
+.service__gif__portfolio {
+    padding-bottom: 250px;
+    animation-name: serviceSpinerOne;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+    animation-timing-function: linear;
+    z-index: 999;
 }
 
 .gif__text {
@@ -1289,6 +1295,16 @@ input:focus:-ms-input-placeholder      {opacity:0;}/* IE */
     color: #FA5C45;
 }
 
+
+@keyframes serviceSpinerOne {
+    0% {
+        transform: translate(0);
+    }
+    100% {
+        transform: translate(-1160px);
+    }
+    
+}
 
 
 
@@ -2400,7 +2416,7 @@ label {
     padding-right: 15px;
   }
   
-  .reviews__text:hover {
+  .reviews__text:hover{
     -webkit-line-clamp: initial;
     overflow:scroll;
   }
@@ -2422,18 +2438,18 @@ label {
     border-bottom: 2px dashed #B0B0B0;
 }
 
-.reviews__item__description::-webkit-scrollbar {
-    width: 1px; /* ширина для вертикального скролла */
-    /* height: 5px; */
-    background-color: #000 ;
+.reviews__text::-webkit-scrollbar {
+    width: 3px; /* ширина для вертикального скролла */
+    height: 0px;
+    background-color: #B0B0B0 ;
 
 }
 
-.reviews__item__description::-webkit-scrollbar-thumb {
+.reviews__text::-webkit-scrollbar-thumb {
     width: 10px; /* ширина для вертикального скролла */
     /* height: 4px; */
     border: 100%;
-    background-color: #FA5C45 ;
+    background-color: #000000 ;
 
 }
 
@@ -3048,6 +3064,7 @@ label {
     }
 
     .business__title {
+        margin-right: 20px;
         width: auto;
         font-size: 40px;
         margin-bottom: 40px;
@@ -3065,8 +3082,24 @@ label {
         min-height: 504px;
     }
 
+    .business__content:not(.bussiness__content__block):hover .business__title{
+        margin-left: 0%;
+        transform: translatex(-0%);
+    }
+
+    .business__content:not(.bussiness__content__block):hover .business__text {
+        margin-left: 40%;
+        transform: translatex(-40%);
+    }
+
     .gif__portfolio {
         padding-bottom: 200px;
+
+    }
+
+    .service__gif__portfolio {
+        padding-bottom: 200px;
+
 
     }
 
@@ -3078,15 +3111,6 @@ label {
         font-size: 80px;
     }
 
-    /* @keyframes spinerOne {
-        0% {
-            transform: translate(-2245px);
-        }
-        100% {
-            transform: translate(0px);
-        }
-        
-    } */
 
     @keyframes spinerOne {
         0% {
@@ -3094,6 +3118,16 @@ label {
         }
         100% {
             transform: translate(-2245px);
+        }
+        
+    }
+
+    @keyframes serviceSpinerOne {
+        0% {
+            transform: translate(0);
+        }
+        100% {
+            transform: translate(-940px);
         }
         
     }
@@ -3855,7 +3889,8 @@ label {
     .contacts__content__social {
         position:initial;
         display: block;
-        margin-top: 45px;
+        margin-top: 47px;
+        padding-top: 0px;
     }
 
     .contacts__content__img {
@@ -4771,6 +4806,8 @@ label {
         font-size: 24px; 
     }
 
+
+
     .input__submit {
         max-width: 134px;
         font-size: 18px;   
@@ -4928,6 +4965,11 @@ label {
 
     }
 
+    .service__gif__portfolio {
+        padding-bottom: 100px;
+
+    }
+
     .gif__text {
         font-size: 60px;
     }
@@ -4952,6 +4994,16 @@ label {
         }
         100% {
             transform: translate(-2570px);
+        }
+        
+    }
+
+    @keyframes serviceSpinerOne {
+        0% {
+            transform: translate(0);
+        }
+        100% {
+            transform: translate(-720px);
         }
         
     }

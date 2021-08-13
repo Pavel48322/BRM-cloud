@@ -33,7 +33,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 menuTitle.forEach(elem => {
                     if (elem.classList.contains('active')) elem.classList.remove('active');
                 });
-
                 el.classList.add('active');
             });
             el.addEventListener("mouseout",() => {
@@ -232,7 +231,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (document.documentElement.clientWidth >= 768 ) {
         photo();
-    }
+    } 
+
+    
 
     //Клик на инпут
 
@@ -285,12 +286,15 @@ document.addEventListener('DOMContentLoaded', () => {
         
         });
         
+        
 
 
 
     }
 
     modal();
+
+    
 
 });
 

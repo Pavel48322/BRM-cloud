@@ -96,12 +96,23 @@
                 <path d="M1 1L29.5 29.5" stroke="#131313" stroke-width="2"/>
                 <path d="M29.5 1L1 29.5" stroke="#131313" stroke-width="2"/>  
             </symbol>
+
+            <symbol id='service__principle__text__plus' viewBox="0 0 18 18" >
+                <path d="M9 1V17" stroke="#FA5C45" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M1 9L17 9" stroke="#FA5C45" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </symbol>
+
+            <symbol id='play__video' viewBox="0 0 119 119" >
+                <circle cx="59.5" cy="59.5" r="59.5" fill="#C4C4C4" fill-opacity="0.4"/>
+                <path d="M78.8028 56.3972C80.7892 57.5752 80.7554 60.4618 78.7421 61.593L52.3167 76.4405C50.3033 77.5718 47.8204 76.0993 47.8474 73.79L48.2017 43.4812C48.2287 41.172 50.7454 39.7579 52.7318 40.9359L78.8028 56.3972Z" fill="white"/>    
+            </symbol>
         </svg>
     </g>
 
     <!-- Menu -->
     <div class="menu">
         <div class="container">
+
             <div class="menu__wrapper">
                 <div class="menu__inner">
                     <div class="menu__content">
@@ -222,8 +233,9 @@
                     </ul>
                 </div>
             </div>
-        </div>
-    </div>
+
+        </div><!-- /container -->
+    </div><!-- /menu -->
 
     <!-- Header -->
     <header class="header">
@@ -261,20 +273,25 @@
 
     <div class="service__intro">
         <div class="container">
+            
             <div class="service__intro__inner">
                 <div class="service__intro__content">
-                    <p class="p service__intro__text">Главная / <span class="service__intro__span">SMM</span></p>
+                    <span class="p service__intro__text">Главная / </span><span class="service__intro__span">SMM</span>
                     <h1 class="h1 service__intro__title">SMM</h1>
                     <p class="p_gray service__intro__video__text service__intro__video__text__one">Цена: от 90 BYN</p>
                     <button class="service__intro__btn">Заказать</button>
                 </div>
                 <div class="service__intro__logo">
-                    <img src="img/service/intro/video.png" class='service__intro__video'></img>
+                    <video src="/img/service/intro/video.mp4" class="service__intro__video"></video>
+                    <svg class="play__video">
+                        <use xlink:href="#play__video"></use>
+                    </svg>
                     <p class="p_gray service__intro__video__text service__intro__video__text__two">Цена: от 90 BYN</p>
                 </div>
             </div>
-        </div>
-    </div>
+
+        </div><!-- /container -->
+    </div><!-- /service__intro -->
 
     <!-- Animation -->
 
@@ -353,6 +370,7 @@
     <!-- Service__info -->
     <div class="service__info">
         <div class="container">
+
             <h2 class="h2 service__info__title">Основная информация</h2>
             <div class="service__info__inner">
                 <div class="service__info__inner__left">
@@ -370,17 +388,19 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+
+        </div><!-- /container -->
+    </div><!-- /service__info -->
 
     <!-- Service__directions -->
 
     <div class="service__directions">
         <div class="container">
+
             <h2 class="h2 service__directions__title">Направления</h2>
             <div class="service__directions__inner">
                 <div class="service__directions__content">
-                    <h4 class="h4 service__directions__text">Продвижение Одноклассники</h4>
+                    <h4 class="h4 service__directions__text active__service__directions__text">Продвижение Одноклассники</h4>
                     <h4 class="h4 service__directions__text">Продвижение Linkedin (Линкедин)</h4>
                     <h4 class="h4 service__directions__text">Продвижение Instagram</h4>
                     <h4 class="h4 service__directions__text">Продвижение “Youtube” (Ютуб)</h4>
@@ -392,8 +412,711 @@
                     <img src="img/service/directions/directions-1.gif" alt="" class="service__directions__logo">
                 </div>
             </div>
+
+        </div><!-- /container -->
+    </div><!-- /service__directions -->
+
+    <!-- Business -->
+
+    <div class="business">
+        <div class="container">
+            <div class="bisiness_item">
+                <div class="business__inner">
+                    <div class="business__content">
+                        <p class="business__date">2020</p>
+                        <h3 class="business__title">Бизнес Квартал Россия</h3>
+                        <div class="bussiness__content__block">
+                            <p class="business__text business__text__one">Проектирование сайта</p>
+                            <p class="business__text business__text__two">Копирайтинг</p>
+                            <p class="business__text business__text__three">Веб-дизайн</p>
+                            <p class="business__text business__text__four">Разработка сайта</p>
+                            <p class="business__text business__text__five">SEO-оптимизация</p>
+                        </div>
+                    </div>
+                    <div class="business__img">
+                        <img src="img/index/business/logo-1.png" alt="" class="business__logo">
+                    </div>
+                </div>
+            </div>
+            <div class="bisiness_item">
+                <div class="business__inner">
+                    <div class="business__content">
+                        <p class="business__date">2020</p>
+                        <h3 class="business__title">Бизнес Квартал Беларусь</h3>
+                        <div class="bussiness__content__block">
+                            <p class="business__text business__text__one">Проектирование сайта</p>
+                            <p class="business__text business__text__two">Копирайтинг</p>
+                            <p class="business__text business__text__three">Веб-дизайн</p>
+                            <p class="business__text business__text__four">Разработка сайта</p>
+                            <p class="business__text business__text__five">SEO-оптимизация</p>
+                        </div>
+                    </div>
+                    <div class="business__img">
+                        <img src="img/index/business/logo-2.png" alt="" class="business__logo">
+                    </div>
+                </div>
+            </div>
+        </div> <!-- /container -->
+    </div> <!-- /business -->
+
+    <div class="gif__portfolio__inner">
+        <img src="img/index/gif/photo-1.png" alt="" class="gif__photo gif__photo__one">
+        <img src="img/index/gif/photo-2.png" alt="" class="gif__photo gif__photo__two">
+        <img src="img/index/gif/photo-3.png" alt="" class="gif__photo gif__photo__three">
+        <img src="img/index/gif/photo-4.png" alt="" class="gif__photo gif__photo__four">
+        <img src="img/index/gif/photo-5.png" alt="" class="gif__photo gif__photo__five">
+        <img src="img/index/gif/photo-6.png" alt="" class="gif__photo gif__photo__six">
+        <img src="img/index/gif/photo-7.png" alt="" class="gif__photo gif__photo__seven">
+        <img src="img/index/gif/photo-8.png" alt="" class="gif__photo gif__photo__eight">
+        <div class="gif__portfolio__wrapper">
+            <div class="gif__portfolio">
+                <p class="gif__text"> <span>
+                <svg class="span__two">
+                    <use xlink:href="#x"></use>
+                </svg> </span> Смотрите наше <span class="span__one">портфолио</span>
+                <span>
+                    <svg class="span__two">
+                        <use xlink:href="#x"></use>
+                    </svg> </span>
+                Смотрите наше <span class="span__one">портфолио</span>
+                <span>
+                    <svg class="span__two">
+                        <use xlink:href="#x"></use>
+                    </svg> </span> Смотрите наше <span class="span__one">портфолио</span>
+                    <span>
+                        <svg class="span__two">
+                            <use xlink:href="#x"></use>
+                        </svg> </span>
+                    Смотрите наше <span class="span__one">портфолио</span></p>
+            </div>
         </div>
     </div>
+
+    <!-- Service__price -->
+
+    <div class="container__inner service__price">
+        <h2 class="h2 service__price__title">Цены социальной раскрутки</h2>
+        <div class="container">
+
+            <div class="service__price__inner">
+                <div class="service__price__inner__left">
+                    <p class="p__light service__price__text">Цены на SMM услуги зависят от поставленных клиентом задач. Чем больше целей преследует заказчик, тем сложнее воплотить их в жизнь, что увеличивает итоговую стоимость продвижения. Мы предлагаем как базовые, так и персональные услуги для реализации рекламных проектов любой сложности.</p>
+                </div>
+                <div class="service__price__inner__right">
+                    <p class="p__light service__price__text">В базовом пакете клиенты найдут основные инструменты продвижения товаров и услуг в социальных сетях. Такой вариант отлично подходит компаниям с наложенными коммуникационными связями, нуждающимся в поддержке профессионалов для внесения необходимых улучшений.</p>
+                </div>
+            </div>
+
+        </div><!-- /container -->
+    </div><!-- /service__price -->
+
+    <!-- Service__team -->
+
+    <div class="container__inner service__team">
+        <h2 class="h2 service__team__title">Наша команда</h2>
+        <div class="container">
+
+            <div class="service__team__inner">
+                <div class="service__team__content">
+                    <div class="service__team__content__left">
+                        <div class="service__item__content__left__one">
+                            <p class="service__team__content__left__number">30</p>
+                            <p class="p_gray__one service__team__content__left__text">высококвалифицированных
+                            специалистов работают 
+                            над вашими проектами</p>
+                        </div>
+                        <div class="service__item__content__left__two">
+                            <p class="service__team__content__left__number">15</p>
+                            <p class="p_gray__one service__team__content__left__text">совместных лет опыта 
+                                в digital-индустрии</p>
+                        </div>
+                    </div>
+                    <div class="service__team__content__right">
+                        <div class="service__item__content__right__one">
+                            <div class="service__team__content__right__item">
+                                <img src="img/service/team/team-1.png" alt="" class="service__team__img__pc service__team__content__right__img">
+                                <img src="img/service/team/team-1-phone.png" alt="" class="service__team__img__phone service__team__content__right__img">
+                                <p class="service__team__content__right__text">Разработчики</p>
+                            </div>
+                            <div class="service__team__content__right__item">
+                                <img src="img/service/team/team-2.png" alt="" class="service__team__img__pc service__team__content__right__img">
+                                <img src="img/service/team/team-2-phone.png" alt="" class="service__team__img__phone service__team__content__right__img">
+                                <p class="service__team__content__right__text">Дизайнеры</p>
+                            </div>
+                        </div>
+                        <div class="service__item__content__right__two">
+                            <div class="service__team__content__right__item">
+                                <img src="img/service/team/team-3.png" alt="" class="service__team__img__pc service__team__content__right__img">
+                                <img src="img/service/team/team-3-phone.png" alt="" class="service__team__img__phone service__team__content__right__img">
+                                <p class="service__team__content__right__text">SEO</p>
+                            </div>
+                            <div class="service__team__content__right__item">
+                                <img src="img/service/team/team-4.png" alt="" class="service__team__img__pc service__team__content__right__img">
+                                <img src="img/service/team/team-4-phone.png" alt="" class="service__team__img__phone service__team__content__right__img">
+                                <p class="service__team__content__right__text">Маркетинг</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- /container -->
+    </div><!-- /service__team -->
+
+    <!-- Service__principle -->
+
+    <div class="container__inner service__principle">
+        <h2 class="h2 service__principle__title">Принцип работы SMM</h2>
+        <div class="container">
+
+            <div class="service__principle__inner">
+                <div class="service__principle__left">
+                    <p class="p__light service__principle__text">Продвижение в социальных сетях от профессионалов агентства «BPM CLOUD» подразумевает использование наработанных инструментов, что в сочетании с опытом команды единомышленников даёт максимальную отдачу. Мы используем персональный подход ко всем клиентам, разрабатывая уникальную маркетинговую стратегию на основании целей, задач и особенностей бренда заказчика.</p>
+                    <p class="p__light service__principle__text">Чтобы реклама в социальных сетях стала рабочим инструментом привлечения заинтересованной аудитории нашими специалистами:</p>
+                    <div class="service__principle__text__block">
+                        <div>
+                            <svg class="service__principle__text__plus__img">
+                                <use xlink:href="#service__principle__text__plus"></use>
+                            </svg>
+                        </div>
+                        <p class="p__light service__principle__text__plus">Анализируется конкурентная среда и наличие аналогичных товаров и услуг в социальных сетях. На стадии запуска SMM проекта мы составляем портрет целевого потребителя. Это помогает заинтересовать посетителей в совершении конкретного действия, которым может быть покупка или оформление заказа.</p>
+                    </div>
+                    <div class="service__principle__text__block">
+                        <div>
+                            <svg class="service__principle__text__plus__img">
+                                <use xlink:href="#service__principle__text__plus"></use>
+                            </svg>
+                        </div>
+                        <p class="p__light service__principle__text__plus">Определяются цели рекламной кампании. Благодаря этому можно настроить результативную маркетинговую стратегию реализации проекта.</p>
+                    </div>
+                </div>
+                <div class="service__principle__right">
+                    <div class="service__principle__text__block">
+                        <div>
+                            <svg class="service__principle__text__plus__img">
+                                <use xlink:href="#service__principle__text__plus"></use>
+                            </svg>
+                        </div>
+                        <p class="p__light service__principle__text__plus">Создается концепция и общий план. Мы подготавливаем оригинальную маркетинговую компанию для привлечения целевой аудитории.</p>
+                    </div>
+                    <div class="service__principle__text__block">
+                        <div>
+                            <svg class="service__principle__text__plus__img">
+                                <use xlink:href="#service__principle__text__plus"></use>
+                            </svg>
+                        </div>
+                        <p class="p__light service__principle__text__plus">Выбираются лучшие площадки для размещения рекламных объявлений. Это помогает получить максимальную отдачу.</p>
+                    </div>
+                    <div class="service__principle__text__block">
+                        <div>
+                            <svg class="service__principle__text__plus__img">
+                                <use xlink:href="#service__principle__text__plus"></use>
+                            </svg>
+                        </div>
+                        <p class="p__light service__principle__text__plus">Создаются и раскручиваются группы в соцсетях. Так проще наладить взаимосвязь с заинтересованными пользователями.</p>
+                    </div>
+                    <p class="p__light service__principle__text">Дополнительно для привлечения аудитории используется таргетинговая реклама в сообществах по интересам. Мы применяем только законные способы продвижения товаров и услуг, чтобы избежать санкций со стороны поисковых систем.</p>
+                </div>
+            </div>
+
+        </div> <!-- /container -->
+    </div> <!-- /service__principle -->
+
+    <!-- Service__benefit -->
+    <div class="container__inner service__benefit">
+        <h2 class="h2 service__benefit__title">Польза раскрутки 
+            в социальных сетях</h2>
+        <div class="container">
+
+            <div class="service__benefit__inner">
+                <div class="service__benefit__inner__left">
+                    <div class="service__benefit__inner__left__one">
+                        <p class="p__light service__benefit__text">Если SMM продвижение заказать в «BPM CLOUD» можно рассчитывать, что поставленные цели будут решены результативно в кратчайшие сроки. Благодаря опыту и квалификации нашей команды продвижение информационного сайта, интернет-магазина или другой площадки в социальных сетях даст положительный результат. Нами используются проверенные временем и практикой маркетинговые инструменты, позволяющие быстро увеличить уровень продаж.</p>
+                        <p class="p__light service__benefit__text">Среди преимуществ продвижения бизнеса в популярных соцсетях стоит выделить:</p>
+                        <div class="service__benefit__text__block">
+                            <div>
+                                <svg class="service__benefit__text__plus__img">
+                                    <use xlink:href="#service__principle__text__plus"></use>
+                                </svg>
+                            </div>
+                            <p class="p__light service__benefit__text__plus">возможность использования неисчерпаемого источника для создания базы клиентов компании;</p>
+                        </div>
+                        <div class="service__benefit__text__block">
+                            <div>
+                                <svg class="service__benefit__text__plus__img">
+                                    <use xlink:href="#service__principle__text__plus"></use>
+                                </svg>
+                            </div>
+                            <p class="p__light service__benefit__text__plus">налаживание быстрой обратной связи с целевым потребителем путем использования готовых коммуникационных инструментов;</p>
+                        </div>
+                    </div>
+                    <div class="service__benefit__inner__left__two">
+                        <div class="service__benefit__text__block">
+                            <div>
+                                <svg class="service__benefit__text__plus__img">
+                                    <use xlink:href="#service__principle__text__plus"></use>
+                                </svg>
+                            </div>
+                            <p class="p__light service__benefit__text__plus">привлечение потока заинтересованных посетителей и как следствие увеличение продаж и заказов;</p>
+                        </div>
+                        <div class="service__benefit__text__block">
+                            <div>
+                                <svg class="service__benefit__text__plus__img">
+                                    <use xlink:href="#service__principle__text__plus"></use>
+                                </svg>
+                            </div>
+                            <p class="p__light service__benefit__text__plus">лояльное отношение пользователей соцсетей к разным брендам в отличие от посетителей, приходящих на сайт из поисковой системы.</p>
+                        </div>
+                        <p class="p__light service__benefit__text">SMM продвижение — это отличный шанс заявить о товарах и услугах среди обширной заинтересованной аудитории. Главное, чтобы проектом занимались профессионалы благодаря чему затраты на маркетинговую рекламу быстро окупятся за счет целевых действий потенциальных потребителей.</p>
+    
+                    </div>
+                </div>
+                <div class="service__benefit__inner__right">
+                    <img src="img/service/benefit/benefit.png" alt="" class="service__benefit__inner__right__img">
+                </div>
+            </div>
+
+        </div><!-- /container -->
+    </div><!-- /service__benefit -->
+
+    <!-- Contacts -->
+    <div class="contacts">
+
+        <div class="contacts__inner">
+            <div class="contacts__form__info">
+                <div class="contacts__form__info__inner">
+                    <p class="contacts__gif contacts__gif__one">bpmcloudbpmcloudbpmcloudbpmclo</p>
+
+                    <div class="contacts__form__inner__margin">
+                        <h2 class="contacts__form__title">Свяжитесь с нами</h2>
+                        <form action="" class="contacts__form">
+                            <div class="contacts__input__name__block">
+                                <label for="name">Имя</label>
+                                <input type="name" name="name" class="contacts__input__name" placeholder="Введите имя">
+                                <span class="error contacts__input__name__check">sss</span>
+                            </div>
+                            <div class="contacts__input__phone__block">
+                                <label for="phone">Номер телефона</label>
+                                <label class='wrap__two'>
+                                    <input type="phone" name="phone" class="contacts__input__phone" placeholder="Введите телефон">
+                                    <span class='tel__two'>+375</span>
+                                 </label>
+                                <span class="error contacts__input__name__check">dsdsds</span>
+                                <span class="error__two contacts__input__phone__check__two">Телефон введен неправильно</span>
+
+                            </div>
+                            <input type="submit" class="contacts__input__submit">
+                        </form>
+                    </div>
+                    <p class="contacts__gif contacts__gif__two">bpmcloudbpmcloudbpmcloudbpmclo</p>
+
+                </div>
+                
+            </div>
+
+            <div class="contacts__content">
+                <div class="contacts__content__inner">
+                    <div class="contacts__content__left">
+                        <div class="contacts__content__item">
+                            <p class="contacts__content__contact">Email:</p>
+                            <p class="contacts__content__info">info@mail.ru</p>
+                        </div>
+                        <div class="contacts__content__item">
+                            <p class="contacts__content__contact">Телефон:</p>
+                            <p class="contacts__content__info">+7 999 000-00-00</p>
+                        </div>
+        
+                        <div class="contacts__content__item">
+                            <p class="contacts__content__contact">Адрес:</p>
+                            <p class="contacts__content__info contacts__content__info__address">где-то 
+                            в Москве</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contacts__content__right">
+                        <div class="contacts__content__social">
+                            <a href="" class="instagram">
+                                <svg class="contacts__content__img">
+                                    <use xlink:href="#instagram"></use>
+                                </svg>
+                            </a>
+                            <a href="" class="behance">
+                                <svg class="contacts__content__img">
+                                    <use xlink:href="#behance"></use>
+                                </svg>
+                            </a>
+                            <a href="" class="dribbble">
+                                <svg class="contacts__content__img">
+                                    <use xlink:href="#dribbble"></use>
+                                </svg>
+                            </a>
+                            <a href="" class="vkontakte">
+                                <svg class="contacts__content__img contacts__content__img__last">
+                                    <use xlink:href="#vk"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- /container -->
+    </div> <!-- /contacts -->
+
+    <!-- Service__stages -->
+    <div class="container__inner service__stages">
+        <h2 class="h2 service__stages__title">Этапы продвижения 
+            в соцсетях</h2>
+        <div class="service__stages__inner">
+            <div class="service__stages__inner__left">
+                <p class="p__light service__stages__text">Социальное продвижение в популярных сетях проходит по стандартной схеме. Для этого наши специалисты:</p>
+                <div class="service__stages__inner__content">
+                    <div class="service__stages__text__img">
+                        <p class="service__stages__text__img__logo">01</p>
+                    </div>
+                    <p class="p__light service__stages__text__plus">Регистрируют и создают страничку или сообщество в необходимой социальной сети. Оформляют её в соответствии с особенностями бренда, товаров или услуг с дальнейшим наполнением контентом.</p>
+                </div>
+                <div class="service__stages__inner__content">
+                    <div class="service__stages__text__img">
+                        <p class="service__stages__text__img__logo">02</p>
+                    </div>
+                    <p class="p__light service__stages__text__plus">Запускают рекламную кампанию в группах по интересам для охвата целевой аудитории и увеличения трафика на сайте.</p>
+                </div>
+            </div>
+            <div class="service__stages__inner__right">
+                <div class="service__stages__inner__content">
+                    <div class="service__stages__text__img">
+                        <p class="service__stages__text__img__logo">03</p>
+                    </div>
+                    <p class="p__light service__stages__text__plus">Подготавливают и внедряют акции, конкурсы, скидки и другие инструменты, увеличивающие лояльность потребителей к бренду, товарам или услугам.</p>
+                </div>
+                <p class="p__light service__stages__text">Цены на продвижение через социальные сети меняются от разных сопутствующих факторов, из-за чего все проекты уникальны. Нашей основной целью является персональный подход к клиентам для эффективной раскрутки и достижения поставленных результатов с минимальным рекламным бюджетом.</p>
+            </div>
+        </div><!-- /container -->
+    </div><!-- /service__stages -->
+
+    <div class="gif__portfolio__inner">
+        <img src="img/index/gif/photo-1.png" alt="" class="gif__photo gif__photo__one">
+        <img src="img/index/gif/photo-2.png" alt="" class="gif__photo gif__photo__two">
+        <img src="img/index/gif/photo-3.png" alt="" class="gif__photo gif__photo__three">
+        <img src="img/index/gif/photo-4.png" alt="" class="gif__photo gif__photo__four">
+        <img src="img/index/gif/photo-5.png" alt="" class="gif__photo gif__photo__five">
+        <img src="img/index/gif/photo-6.png" alt="" class="gif__photo gif__photo__six">
+        <img src="img/index/gif/photo-7.png" alt="" class="gif__photo gif__photo__seven">
+        <img src="img/index/gif/photo-8.png" alt="" class="gif__photo gif__photo__eight">
+        <div class="gif__portfolio__wrapper">
+            <div class="service__gif__portfolio">
+                <p class="gif__text"> <span>
+                <svg class="span__two">
+                    <use xlink:href="#x"></use>
+                </svg> </span> Заказать наши <span class="span__one">услуги</span>
+                <span>
+                    <svg class="span__two">
+                        <use xlink:href="#x"></use>
+                    </svg> </span>
+                Заказать наши <span class="span__one">услуги</span>
+                <span>
+                    <svg class="span__two">
+                        <use xlink:href="#x"></use>
+                    </svg> </span> Заказать наши <span class="span__one">услуги</span>
+                    <span>
+                        <svg class="span__two">
+                            <use xlink:href="#x"></use>
+                        </svg> </span>
+                    Заказать наши <span class="span__one">услуги</span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Service__stages -->
+    <div class="container__inner service__stages">
+        <h2 class="h2 service__stages__title">Почему работу лучше доверить профес<span>-</span>сионалам</h2>
+        <div class="service__stages__inner__two">
+            <div class="service__stages__inner__left">
+                <p class="p__light service__stages__text">Мы продвигаем бизнес в популярных социальных сетях не первый год. Благодаря проверенным алгоритмам, эффективным методикам и надежным инструментам обеспечивается максимальная результативность рекламной кампании. Мы знаем все тонкости раскрутки в соцсетях, и гарантируем, что поставленные клиентом задачи будут выполнены в сроки в соответствии с условиями договора.</p>
+                <p class="p__light service__stages__text">Если SMM заказать у нас можно рассчитывать на ряд преимуществ:</p>
+                <div class="service__stages__inner__content">
+                    <div class="service__stages__text__img">
+                        <p class="service__stages__text__img__logo">01</p>
+                    </div>
+                    <p class="p__light service__stages__text__plus">Введение проекта специалистом, прошедшим соответствующее обучение с опытом работы в маркетинговой сфере.
+                </p>
+                </div>
+                <div class="service__stages__inner__content">
+                    <div class="service__stages__text__img">
+                        <p class="service__stages__text__img__logo">02</p>
+                    </div>
+                    <p class="p__light service__stages__text__plus">Выгодные расценки на услуги профессионалов. У нас всегда актуальные цены на продвижение сайтов, товаров и услуг в социальных сетях.</p>
+                </div>
+                <div class="service__stages__inner__content">
+                    <div class="service__stages__text__img">
+                        <p class="service__stages__text__img__logo">03</p>
+                    </div>
+                    <p class="p__light service__stages__text__plus">Использование проверенных рекламных инструментов для результативного введения проекта.</p>
+                </div>
+            </div>
+            <div class="service__stages__inner__right">
+                <div class="service__stages__inner__content">
+                    <div class="service__stages__text__img">
+                        <p class="service__stages__text__img__logo">04</p>
+                    </div>
+                    <p class="p__light service__stages__text__plus">Возможность контроля поведенческих факторов благодаря внедрению систем аналитики. Это позволяет при необходимости вносить коррективы в рекламную кампанию.</p>
+                </div>
+                <div class="service__stages__inner__content">
+                    <div class="service__stages__text__img">
+                        <p class="service__stages__text__img__logo">05</p>
+                    </div>
+                    <p class="p__light service__stages__text__plus">Увеличение количества заказов и продаж в короткие сроки. Благодаря готовым маркетинговым решениям первые результаты не заставят ждать клиентов.</p>
+                </div>
+                <p class="p__light service__stages__text">Мы нацелены на результативное и долгосрочное партнерство, поэтому к каждому клиенту подбираем персональный подход. Перед началом сотрудничества мы согласовываем все нюансы предстоящей работы, в том числе и стоимость услуг с заказчиком. Чтобы запустить SMM продвижение товаров и услуг в интернете достаточно связаться с нашими менеджерами по телефону или оставить заявку на сайте.</p>
+            </div>
+        </div><!-- /container -->
+    </div><!-- /service__stages -->
+
+     <!-- Blog -->
+
+     <div class="blog">
+        <div class="container">
+
+            <h2 class="blog__title">Блог</h2>
+            <div class="blog__inner">
+                <a href="#" class='blog__link'>
+                    <div class="blog__item ">
+                        <div class="blog__img blog__img__one">
+                            <img src="img/index/blog/blog-1.png" alt="" class="blog__logo">
+                        </div>
+                        <div class="blog__content blog__content__one">
+                            <h3 class="blog__inner__title">Новость №1</h3>
+                            <p class="blog__inner__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel.Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel</p>    
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class='blog__link'>
+                    <div class="blog__item">
+                        <div class="blog__img blog__img__two">
+                            <img src="img/index/blog/blog-2.png" alt="" class="blog__logo">
+                        </div>
+                        <div class="blog__content blog__content__two">
+                            <h3 class="blog__inner__title">Новость №2</h3>
+                            <p class="blog__inner__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel</p>    
+                        </div>
+                    </div>
+                </a>
+                <button class="blog__btn">Блог</button>
+            </div>
+
+        </div> <!-- /container -->
+    </div> <!-- /blog -->
+
+    <!-- Reviews -->
+
+    <div class="reviews">
+        <div class="container">
+
+            <h2 class="reviews__title">Отзывы</h2>
+            <div class="reviews__inner">
+                <div class="reviews__item">
+                    <div class="reviews__item__name">
+                        <p class="reviews__name">Владислав И.</p>
+                        <p class="reviews__date">01.02.2020</p>
+                    </div>
+                    <div class="reviews__item__description reviews__item__description__one">
+                        <p class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, velLorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel</p>
+                        <button class="reviews__btn">Посмотреть отзыв</button>
+                    </div>
+                </div>
+                <div class="reviews__item">
+                    <div class="reviews__item__name">
+                        <p class="reviews__name">Иван И.</p>
+                        <p class="reviews__date">01.02.2020</p>
+                    </div>
+                    <div class="reviews__item__description">
+                        <p class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel</p>
+                        <button class="reviews__btn">Посмотреть отзыв</button>
+                    </div>
+                </div>
+                <div class="reviews__item">
+                    <div class="reviews__item__name">
+                        <p class="reviews__name">Анастасия И.</p>
+                        <p class="reviews__date">01.02.2020</p>
+                    </div>
+                    <div class="reviews__item__description reviews__item__description__one">
+                        <p class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel</p>
+                        <button class="reviews__btn">Посмотреть отзыв</button>
+                    </div>
+                </div>
+                <div class="reviews__item">
+                    <div class="reviews__item__name">
+                        <p class="reviews__name">Екатерина И.</p>
+                        <p class="reviews__date">01.02.2020</p>
+                    </div>
+                    <div class="reviews__item__description">
+                        <p class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel</p>
+                        <button class="reviews__btn">Посмотреть отзыв</button>
+                    </div>
+                </div>
+                <button class="reviews__btn_two">Другие отзывы</button>
+            </div>
+
+        </div><!-- /container -->
+    </div> <!-- /reviews -->
+
+    <!-- Feedback -->
+
+    <div class="feedback">
+        <div class="container">
+            <div class="feedback__inner">
+
+                <div class="feedback__text">
+                    <h2 class="feedback__title">Оставьте заявку</h2>
+                </div>
+
+                <div class="feedback__form">
+                    <form action="" class="form">
+                        <div>
+                            <input type="name" class="input feedback__input input__name" placeholder="Имя" required>
+                            <span class="input__descr input__name__prompt"> Имя</span>
+                            <span class="error feedback__form__error">Пожалуйста, введите имя</span>
+                        </div>
+                        <div>
+                            <label class='wrap__one'>
+                                <input type="phone" class="input feedback__input input__phone"placeholder="Телефон" required>
+                                <span class='tel__one'>+375</span>
+                            </label>
+                            <span class="input__descr input__name__prompt"> Телефон</span>
+                            <span class="error feedback__form__error">Пожалуйста, введите телефон</span>
+                            <span class="error__two feedback__form__error__two">Телефон введен неправильно</span>
+
+                        </div>
+
+                        
+                        <input type="submit" class="input__submit" value="Отправить заявку">
+                    </form>
+                </div>
+
+            </div> <!-- /feedback__inner -->
+        </div> <!-- /container -->
+    </div> <!-- /feedback -->
+
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer__inner">
+                <div class="footer__item__one">
+                    <svg class="footer__img">
+                        <use xlink:href="#header"></use>
+                    </svg>
+                    <p class="footer__item__one__text">125252, г.Москва, Ходынский бул., 20А, офис 409</p>
+                    <p class="footer__item__one__text">+7 999 000-00-00</p>
+                    <p class="footer__item__one__text">+7 999 000-00-01</p>
+                    <p class="footer__item__one__text">info@bpm-cloud.ru</p>
+                </div>
+
+                <div class="footer__item__two">
+                    <p class="footer__item__title">Наши соцсети</p>
+                    <div class="footer__item__two__content">
+                        <div class="footer__item__two__content__left">
+                            <div class="footer__item__two__content__block">
+                                <svg class="footer__item__two__content__logo">
+                                    <use xlink:href="#footer__behance"></use>
+                                </svg>
+                                 <a href="https://www.behance.net/" class="footer__item__two__content__link">Behance</a>
+                            </div>
+                            <div class="footer__item__two__content__block">
+                                <svg class="footer__item__two__content__logo">
+                                    <use xlink:href="#footer__dribbble"></use>
+                                </svg>
+                                <a href="https://dribbble.com/" class="footer__item__two__content__link">Dribbble</a>
+                            </div>
+                            <div class="footer__item__two__content__block">
+                                <svg class="footer__item__two__content__logo">
+                                    <use xlink:href="#footer__vkontakte"></use>
+                                </svg>
+                                <a href="https://vk.com/" class="footer__item__two__content__link">Vkontakte</a>
+                            </div>
+                            <div class="footer__item__two__content__block">
+                                <svg class="footer__item__two__content__logo">
+                                    <use xlink:href="#footer__telegram"></use>
+                                </svg>
+                                <a href="https://web.telegram.org/" class="footer__item__two__content__link">Telegram</a>
+                            </div>
+                         </div>
+                         <div class="footer__item__two__content__right">
+                             <div class="footer__item__two__content__block">
+                                <svg class="footer__item__two__content__logo">
+                                    <use xlink:href="#footer__instagram"></use>
+                                </svg>
+                                <a href="https://www.instagram.com/" class="footer__item__two__content__link">Instagram</a>
+                             </div>
+                             <div class="footer__item__two__content__block">
+                                <svg class="footer__item__two__content__logo">
+                                    <use xlink:href="#footer__youtube"></use>
+                                </svg>
+                                <a href="https://www.youtube.com/" class="footer__item__two__content__link">Youtube</a>
+                             </div>
+                             <div class="footer__item__two__content__block">
+                                <svg class="footer__item__two__content__logo">
+                                    <use xlink:href="#footer__facebook"></use>
+                                </svg>
+                                <a href="https://ru-ru.facebook.com/" class="footer__item__two__content__link">Facebook</a>
+                             </div>
+                             <div class="footer__item__two__content__block">
+                                <svg class="footer__item__two__content__logo">
+                                    <use xlink:href="#footer__twitter"></use>
+                                </svg>
+                                <a href="https://twitter.com/" class="footer__item__two__content__link">Twitter</a>
+                             </div>
+                          </div>
+                    </div>
+                </div>
+
+                <div class="footer__item__three">
+                    <p class="footer__item__title">О нас</p>
+                    <div class="footer__item__three__content">
+                        <div class="footer__item__three__content__left">
+                            <p class="footer__item__content__text">Блог</p>
+                            <p class="footer__item__content__text">Портфолио</p>
+                            <p class="footer__item__content__text">Контакты</p>
+                        </div>
+                        <div class="footer__item__three__content__right">
+                            <p class="footer__item__content__text">Услуги</p>
+                            <p class="footer__item__content__text">Реквизиты</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__item__four">
+                    <p class="footer__item__title">Услуги</p>
+                    <div class="footer__item__four__content">
+                        <div class="footer__item__four__content__left">
+                            <p class="footer__item__content__text">Разработка сайтов</p>
+                            <p class="footer__item__content__text">Брендинг и дизайн</p>
+                            <p class="footer__item__content__text">Продвижение сайтов</p>
+                            <p class="footer__item__content__text">Разработка приложений</p>
+                            <p class="footer__item__content__text">Контекстная реклама</p>
+
+                        </div>
+                        <div class="footer__item__four__content__right">
+                            <p class="footer__item__content__text">SMM</p>
+                            <p class="footer__item__content__text">Управление репутацией</p>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <div class="footer__copyright__left">
+                    <p class="footer__copyright__text">Разработка и продвижение - ООО “БПМ-Клауд” 2021</p>
+                </div>
+                <div class="footer__copyright__right">
+                    <p class="footer__copyright__map">Карта сайта</p>
+                    <p class="footer__copyright__privacy__policy">Политика конфиденциальности</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
 
     <script src="js/script.js"></script>
 </body>
