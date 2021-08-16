@@ -246,6 +246,10 @@ a {
     height: 100%;
 }
 
+.active__reviews__modal {
+    display: block;
+}
+
 .reviews__modal__inner {
     position: relative;
     position: fixed;
