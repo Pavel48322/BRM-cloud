@@ -409,75 +409,66 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // //Плавное увеличение чисел
 
-    // function onScrolledTo(el, callback) {
-
-    //     // Определяем нормализованное смещение элемента в видимой области окна (от 0 до 1)
-    //     // 0 = элемент выехал снизу из под экрана ... 1 = элемент заехал вверх под экран
-    //     function normOffset() {
-    //       let eR = el.getBoundingClientRect();
-    //       return 1.0 - eR.bottom / (window.innerHeight + el.offsetHeight);
-    //     }
-      
-    //     // Выполнение задачи
-    //     function taskUpdate() {
-    //       if (normOffset() > 0) {
-    //         window.removeEventListener('resize', onUpdate);
-    //         window.removeEventListener('scroll', onUpdate);
-    //         callback();
-    //       }
-    //     }
-      
-    //     // Слушатель
-    //     function onUpdate(event) {
-    //       taskUpdate();
-    //     }
-      
-    //     // Запуск задачи
-    //     window.addEventListener('resize', onUpdate);
-    //     window.addEventListener('scroll', onUpdate);
-    //     taskUpdate();
-      
-    //   }
-
-    // onScrolledTo(document.querySelector('.service__info__inner__right__number'), 
-        playNumber(5, 40,200,500,2000,120,140,147,149,150, '.numberOne');
-        playNumber(0, 20,100,300,2000,900,980,990,999,1000, '.numberTwo');
-    // );
-
     function playNumber(one, two, three, four, five, six, seven, eight, nine, ten, selector ) {
         
         const number = document.querySelector(selector);
         let current = 0;
-            setInterval(() => {
-                if(current <= six) {
-                    number.innerHTML = current++;
-                }
-            }, one);
-            setInterval(() => {
-                if(current <= seven) {
-                    number.innerHTML = current++;
-                }
-            }, two);
-            setInterval(() => {
-                if(current <= eight) {
-                    number.innerHTML = current++;
-                }
-            }, three);
-            setInterval(() => {
-                if(current <= nine) {
-                    number.innerHTML = current++;
-                }
-            }, four);
-            setInterval(() => {
-                if(current <= ten) {
-                    number.innerHTML = current++;
-                }
-            }, five);  
+        if (document.body.contains(number)) {
+        window.addEventListener('scroll', () => {
+            let box = number.getBoundingClientRect();
+            if (window.pageYOffset >= box.top + pageYOffset - document.documentElement.clientHeight + 100) {
+                setInterval(() => {
+                    if(current <= six) {
+                        number.innerHTML = current++;
+                    }
+                }, one);
+                setInterval(() => {
+                    if(current <= seven) {
+                        number.innerHTML = current++;
+                    }
+                }, two);
+                setInterval(() => {
+                    if(current <= eight) {
+                        number.innerHTML = current++;
+                    }
+                }, three);
+                setInterval(() => {
+                    if(current <= nine) {
+                        number.innerHTML = current++;
+                    }
+                }, four);
+                setInterval(() => {
+                    if(current <= ten) {
+                        number.innerHTML = current++;
+                    }
+                }, five);
+            }
+        });   
+        }
     }
+
+
+        playNumber(20, 50,1000,1500,2000,120,140,147,149,150, '.numberOne');
+        playNumber(0, 20,100,300,2000,900,980,990,999,1000, '.numberTwo');
 
     
 
+    // Активные табы на странице услуг
 
+    function activeTab() {
+        const activeTabTitle = document.querySelectorAll('.service__directions__text');
+
+        activeTabTitle.forEach((el)=> {
+            el.addEventListener('mouseover', (e) => {
+                activeTabTitle.forEach((el) => {
+                    el.classList.remove('active__service__directions__text');
+                });
+                e.target.classList.add('active__service__directions__text');
+            });
+        });
+    }
+
+    activeTab();
 });
 
 

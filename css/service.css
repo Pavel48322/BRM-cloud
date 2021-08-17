@@ -251,10 +251,6 @@
     margin-right: 196px;
 }
 
-.active__service__directions__text {
-    color: #131313;
-}
-
 
 .service__directions__content::-webkit-scrollbar {
     width: 4px; /* ширина для вертикального скролла */
@@ -275,6 +271,11 @@
 .service__directions__text {
     padding-bottom: 40px;
     cursor: pointer;
+    color: #B0B0B0;
+}
+
+.active__service__directions__text {
+    color: #131313;
 }
 
 .service__directions__img {
@@ -290,12 +291,17 @@
 }
 
 .service__directions__logo {
+    display: none;
     max-width: 300px;
     min-width: 288px;
     width: 100%;
     max-height: 300px;
     min-height: 288px;
     height: 100%;
+}
+
+.active__service__directions__logo {
+    display: initial;
 
 }
 
